@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -14,6 +16,131 @@ body {
   background-position: center;
 }
 
+.wrapp-site {
+  height: 100%;
+}
+.wrapp-site .main-content .main-row {
+  width: 100%;
+}
+.wrapp-site .main-content .all-descriptions {
+  position: relative;
+  height: 350px;
+  padding: 0px 30px;
+}
+.wrapp-site .main-content .all-descriptions .description {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  opacity: 0;
+  margin-top: 10%;
+  width: 100%;
+}
+.wrapp-site .main-content .all-descriptions .description h1 {
+  font-size: 3em;
+}
+.wrapp-site .main-content .all-descriptions .description p {
+  font-size: 1em;
+}
+.wrapp-site .main-content .all-descriptions .description:nth-child(1) {
+  opacity: 1;
+}
+.wrapp-site .main-content .wrapper-slider {
+  position: relative;
+  transition: width 0.8s;
+  width: 60%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50%;
+  width: 100%;
+  border-bottom: 8px solid #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher .images-front {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher .images-front .single-img {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher .images-front .single-img.active {
+  display: block;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher-1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher-1 .images-back {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher-1 .images-back .single-img {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .switcher-1 .images-back .single-img.active {
+  display: block;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .handler {
+  width: 100%;
+  height: 8px;
+  margin-top: -8px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: 1;
+}
+.wrapp-site .main-content .wrapper-slider .slider-content .handler:hover {
+  cursor: grab;
+}
+.wrapp-site .main-content .wrapper-slider .img-g {
+  display: block;
+  position: absolute;
+  left: -60px;
+  top: 42.5%;
+  width: 50px;
+  height: 50px;
+}
+.wrapp-site .main-content .wrapper-slider .img-c {
+  display: block;
+  position: absolute;
+  right: -60px;
+  top: 42.5%;
+  width: 50px;
+  height: 50px;
+}
+
 .navbar .navbar-nav .nav-item a {
   transition: all 1.4s;
   color: white;
@@ -25,129 +152,9 @@ body {
   color: #55838a;
 }
 
-.all-descriptions {
-  position: relative;
-  height: 350px;
-}
-.all-descriptions .description {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  opacity: 0;
-  margin-top: 10%;
-  margin-left: 10%;
-  width: 100%;
-}
-.all-descriptions .description h1 {
-  font-size: 50px;
-}
-.all-descriptions .description p {
-  font-size: 20px;
-}
-.all-descriptions .description:nth-child(1) {
-  opacity: 1;
-}
-
-.wrapper-slider {
-  position: relative;
-  transition: width 0.8s;
-  width: 60%;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 11%;
-}
-.wrapper-slider .slider-content .switcher {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 50%;
-  width: 100%;
-  border-bottom: 8px solid #fff;
-  z-index: 1;
-  overflow: hidden;
-}
-.wrapper-slider .slider-content .switcher .images-front {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 400px;
-}
-.wrapper-slider .slider-content .switcher .images-front .single-img {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-.wrapper-slider .slider-content .switcher .images-front .single-img.active {
-  display: block;
-}
-.wrapper-slider .slider-content .switcher-1 {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 50%;
-  width: 100%;
-  overflow: hidden;
-}
-.wrapper-slider .slider-content .switcher-1 .images-back {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 400px;
-}
-.wrapper-slider .slider-content .switcher-1 .images-back .single-img {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-.wrapper-slider .slider-content .switcher-1 .images-back .single-img.active {
-  display: block;
-}
-.wrapper-slider .slider-content .handler {
-  width: 100%;
-  height: 8px;
-  margin-top: -8px;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  z-index: 1;
-}
-.wrapper-slider .slider-content .handler:hover {
-  cursor: grab;
-}
-.wrapper-slider .img-g {
-  display: block;
-  position: absolute;
-  left: -60px;
-  top: 42.5%;
-  width: 50px;
-  height: 50px;
-}
-.wrapper-slider .img-c {
-  display: block;
-  position: absolute;
-  right: -60px;
-  top: 42.5%;
-  width: 50px;
-  height: 50px;
-}
-
 .bottom-line {
-  margin-top: 4.5%;
+  position: absolute;
+  bottom: 0px;
 }
 .bottom-line .logo {
   width: 40px;
@@ -228,7 +235,19 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) and (min-width: 250px) {
+@media screen and (max-width: 2000px) and (min-width: 768px) {
+  .main-content {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 250px) {
   .wrapper-slider {
     margin-top: 0px;
   }
